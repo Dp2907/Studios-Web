@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+  display: block;
+  color: var(--heading-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-color: #e40000;
+  --primary-color: #0d369f;
+  --primary-light: #fcf1e7;
+  --primary-dark: #ffc945;
+  --secondary-color: #ff6e65;
+  --font-color: #707070;
+  --bg-color: #fff;
+  --bg-color-2: #fff;
+  --heading-color: #060606;
+  --footer-color: #060e1f;
+  --footer-cpy-color: #040a17;
+  --border-radius: 30px;
+  --border-radius-full: 15px;
+  --border-color: transparent;
+  --border-color-light: #eee;
+  --iframe-filter: grayscale(0%);
+  --bg-grey: #f9f9f9;
+  --bg-light: #f8f9ff;
+  --bg-dark-color: #fff;
+  --quote-text-color: #1d2c4c;
+  --placeholder-color-search: #6c757d;
+  --bg-color-li: rgb(13 54 159 / 9%);
+  --box-shadow-color: rgb(4 20 69 / 10%);
+  --logo-color: #0d369f;
+}
+
+[data-theme="dark"] {
+  --theme-color: #e40000;
+  --primary-color: #4867b0;
+  --primary-light: #ffc945;
+  --secondary-color: #ff6e65;
+  --primary-dark: #00070c;
+  --font-color: #b7b7b7;
+  --bg-color: #161c2d;
+  --bg-color-2: transparent;
+  --heading-color: #fdfffc;
+  --footer-color: #0e0e0e;
+  --footer-cpy-color: #060606;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --iframe-filter: grayscale(100%);
+  --bg-grey: #060e1f;
+  --bg-light: #121725;
+  --bg-dark-color: #27282b;
+  --quote-text-color: #e6e6e6;
+  --placeholder-color-search: #eee;
+  --bg-color-li: rgb(168 176 195 / 11%);
+  --box-shadow-color: hsla(222, 34%, 17%, 1);
+  --logo-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 2.1875rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+h3 {
+  font-size: 1.125rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p,
+a,
+span {
+  font-size: 1.125rem;
+  line-height: 28px;
+  font-weight: normal;
+  align-self: center;
+  padding-top: 6px;
+}
+
+a,
+a:hover,
+a::before,
+a::after,
+li,
+li::before,
+li::after,
+button,
+button:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  font-weight: 400;
+}
+
+p,
+span {
+  color: var(--font-color);
+}
+
+a {
+  color: var(--nav-color);
+}
+img {
+  width: 100%;
+}
