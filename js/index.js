@@ -1,13 +1,17 @@
 window.onscroll = function (event) {
   let navbarFixed = document.querySelector(".header");
+  let headerTopChanged = document.querySelector(".header__top");
+  let headerBottomChanged = document.querySelector(".header__bottom");
   let toTop = document.querySelector("#pushToTop");
-  if (window.scrollY > 10) {
+  if (window.scrollY > 60) {
     navbarFixed.classList.add("header--sticky");
+    headerBottomChanged.classList.add("header__bottom--changed");
     toTop.classList.add("visibleButton");
     //hoặc
     //navbarFixed.style.padding = "20px 15px";
   } else {
     navbarFixed.classList.remove("header--sticky");
+    headerBottomChanged.classList.remove("header__bottom--changed");
     toTop.classList.remove("visibleButton");
     //hoặc
     //navbarFixed.style.padding = "25px 15px";
@@ -20,7 +24,7 @@ $(document).ready(function () {
     margin: 10,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       0: {
