@@ -1,6 +1,5 @@
 window.onscroll = function (event) {
   let navbarFixed = document.querySelector(".header");
-  let headerTopChanged = document.querySelector(".header__top");
   let headerBottomChanged = document.querySelector(".header__bottom");
   let toTop = document.querySelector("#pushToTop");
   if (window.scrollY > 60) {
