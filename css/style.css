@@ -6,19 +6,6 @@
   font-family: "Jost", sans-serif;
 }
 
-i {
-  color: var(--primary-color);
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 1.5625rem;
-  margin-bottom: 0.9375rem;
-  display: block;
-  color: var(--heading-color);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -79,11 +66,21 @@ body {
   background-color: var(--bg-color);
 }
 
-h1 {
+h1,
+h1 span {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 600;
   text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+  display: block;
   color: var(--heading-color);
 }
 
@@ -94,6 +91,10 @@ h3 {
   line-height: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+i {
+  color: var(--primary-color);
 }
 
 p,
@@ -353,7 +354,7 @@ a.navbar-brand {
 .form-inline button {
   position: absolute;
   top: 50%;
-  right: 10%;
+  right: 15%;
   transform: translate(0, -50%);
   background-color: transparent;
   border: none;
@@ -452,6 +453,12 @@ input:checked + .mode-container i.fa-moon {
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  a.nav-link {
+    font-size: 0.875rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header__top {
     display: none;
@@ -523,6 +530,10 @@ input:checked + .mode-container i.fa-moon {
 
   button.navbar-toggler.collapsed .fa-bars {
     display: block;
+  }
+
+  .form-inline button {
+    right: 10%;
   }
 }
 
@@ -1588,7 +1599,7 @@ input:checked + .mode-container i.fa-moon {
 }
 .footer__copyright p {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1200px) {
