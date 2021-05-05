@@ -65,7 +65,7 @@
               Studios
             </a>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler collapsed"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -73,7 +73,8 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <i class="fa fa-bars"></i>
+              <i class="fa fa-close"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -100,6 +101,7 @@
                     aria-expanded="false"
                   >
                     PAGES
+                    <span class="fa fa-angle-down"></span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">BLOG POSTS</a>
@@ -113,31 +115,35 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">CONTACT US</a>
                 </li>
+
+                <li class="nav-item">
+                  <form class="nav-link form-inline my-2 my-lg-0">
+                    <input
+                      class="form-control mr-sm-2"
+                      type="search"
+                      placeholder="Enter Keyword"
+                      aria-label="Search"
+                    />
+                    <button type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </form>
+                </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Enter Keyword"
-                  aria-label="Search"
-                />
-                <button type="submit">
-                  <i class="fa fa-search"></i>
-                </button>
-              </form>
-              <div class="mobile-position">
-                <nav class="navigation">
-                  <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="mode-container">
-                        <i class="fa fa-sun"></i>
-                        <i class="fa fa-moon"></i>
-                      </div>
-                    </label>
-                  </div>
-                </nav>
-              </div>
+            </div>
+
+            <div class="mobile-position">
+              <nav class="navigation">
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode-container">
+                      <i class="fa fa-sun"></i>
+                      <i class="fa fa-moon"></i>
+                    </div>
+                  </label>
+                </div>
+              </nav>
             </div>
           </nav>
         </div>
@@ -575,19 +581,19 @@
           laborum et dolorum fuga.
         </p>
         <div class="row">
-          <div class="stats__item col-12 col-md-6 col-lg-3">
+          <div class="stats__item col-12 col-sm-6 col-lg-3">
             <h1 class="counter">6,300</h1>
             <h2>LEARNERS & COUNTING</h2>
           </div>
-          <div class="stats__item col-12 col-md-6 col-lg-3">
+          <div class="stats__item col-12 col-sm-6 col-lg-3">
             <h1 class="counter">638</h1>
             <h2>TOTAL COURSES</h2>
           </div>
-          <div class="stats__item col-12 col-md-6 col-lg-3">
+          <div class="stats__item col-12 col-sm-6 col-lg-3">
             <h1 class="counter">7,600</h1>
             <h2>SUCCESSFUL STUDENTS</h2>
           </div>
-          <div class="stats__item col-12 col-md-6 col-lg-3">
+          <div class="stats__item col-12 col-sm-6 col-lg-3">
             <h1 class="counter">36</h1>
             <h2>LANGUAGES</h2>
           </div>
@@ -756,7 +762,7 @@
     <section class="contact">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-5">
+          <div class="col-12 col-lg-5 contact__left">
             <img src="./images/image.png" alt="" />
           </div>
           <div class="col-12 col-lg-7 contact__right">
