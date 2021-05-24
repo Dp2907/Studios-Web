@@ -403,16 +403,11 @@ a.navbar-brand {
   background-color: transparent;
 }
 
-/* THEME
+/* /* THEME
 toggle switch*/
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-}
-
-.theme-switch-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
 }
 
 .theme-switch {
@@ -492,7 +487,7 @@ input:checked + .mode-container i.fa-moon {
     position: absolute;
     top: 1.6rem;
     right: 0;
-  }
+  } */
 
   .dropdown {
     position: relative;
